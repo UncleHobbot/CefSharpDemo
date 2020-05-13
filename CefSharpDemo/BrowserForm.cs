@@ -9,8 +9,8 @@ namespace CefSharpDemo
 {
     public partial class BrowserForm : Form
     {
-        private ChromiumWebBrowser _browser;
-        private Bridge _bridge { get; }
+        private readonly ChromiumWebBrowser _browser;
+        private readonly Bridge _bridge;
 
         public BrowserForm()
         {
@@ -20,6 +20,7 @@ namespace CefSharpDemo
             startHomePage = new Uri(Path.GetFullPath(startHomePage)).LocalPath;
             
             _bridge = new Bridge();
+
             _browser = new ChromiumWebBrowser(startHomePage);
             _browser.JavascriptObjectRepository.Register("bridge", _bridge, false, new BindingOptions {CamelCaseJavascriptNames = false});
 
@@ -33,7 +34,7 @@ namespace CefSharpDemo
             };
 
             tpBrowser.AutoScroll = true;
-            tpBrowser.Controls.Add(_browser);
+            splitContainer1.Panel2.Controls.Add(_browser);
         }
     }
 }

@@ -21,11 +21,9 @@ namespace CefSharpDemo.Logic
             foreach (var child in control.Children)
                 deletedItems.AddRange(Remove(child.ServerId));
 
-            //DataContext.Session.Delete(control.FormControl);
             FormControls.Remove(control);
             return deletedItems;
         }
-
 
         public string GenerateName(string originalName)
         {
