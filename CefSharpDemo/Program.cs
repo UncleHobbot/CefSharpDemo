@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using CefSharp;
+using CefSharp.WinForms;
 
 namespace CefSharpDemo
 {
@@ -14,8 +13,17 @@ namespace CefSharpDemo
         [STAThread]
         static void Main()
         {
+            //var virtualUI = new Cybele.Thinfinity.VirtualUI();
+            //virtualUI.Start();
+            //virtualUI.AllowExecute("CefSharp.BrowserSubprocess.exe");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            var settings = new CefSettings();
+            settings.SetOffScreenRenderingBestPerformanceArgs();
+            Cef.Initialize(settings);
+
             Application.Run(new MainForm());
         }
     }

@@ -1,0 +1,712 @@
+body {
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+
+.temp-drop-zone {
+    border-bottom: 2px solid #BBDEFB;
+    background: #E3F2FD;
+    min-height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.page-temp-drop-zone {
+    border-bottom-color: #00BCD4 !important;
+    background: #A7FFEB !important;
+}
+
+
+.row-container {
+    margin: 5px 0 5px 0;
+    display: block;
+}
+
+    .row-container .columns-holder .col {
+        min-height: 35px;
+    }
+
+    .row-container .col {
+        min-height: 35px;
+    }
+
+.drop-zone {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+
+
+
+
+.col {
+    border: 1px dashed #039BE5;
+    border-color: #9E9E9E;
+    overflow: hidden;
+}
+
+.drop-it {
+    background: #FFEB3B !important;
+}
+
+.you-drop-it {
+    background: #fff3a5 !important;
+}
+
+.col > .drop-zone {
+    text-align: center;
+    line-height: 35px;
+}
+
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+}
+
+.drop-down-right-float ul {
+    left: 0 !important;
+    right: initial !important;
+}
+
+.row-container .controls, .row-control-container .controls {
+    display: none;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+/* ---------- Control Styles -------------- */
+
+
+.control-item {
+    /*text-align: right !important;*/
+    padding-left: 50px;
+    outline: none;
+}
+
+.control-item {
+    background-repeat: no-repeat;
+    background-position: 5px 3px;
+}
+
+.row-icon {
+    /*text-align: right !important;*/
+    outline: none;
+    background-image: url(images/row.png);
+    background-repeat: no-repeat;
+    background-position: 5px 6px;
+}
+
+.genericgrid-icon {
+    background-image: url(images/genericgrid.png);
+}
+
+.numerictextbox-icon, .textbox-icon {
+    background-image: url(images/textbox.png);
+}
+
+.textarea-icon {
+    background-image: url(images/scroll_pane_text.png);
+}
+
+.password-icon {
+    background-image: url(images/textfield_password.png);
+}
+
+.combobox-icon {
+    background-image: url(images/combobox.png);
+}
+
+.autocompletedropdownlist-icon {
+    background-image: url(images/combo_box_edit.png);
+}
+
+.label-icon {
+    background-image: url(images/label.png);
+}
+
+.button-icon {
+    background-image: url(images/button.png);
+}
+
+.imagecontrol-icon {
+    background-image: url(images/image.png);
+}
+
+.tabcontrol-icon {
+    background-image: url(images/tab.png);
+}
+
+.checkbox-icon {
+    background-image: url(images/check_box.png);
+}
+
+.datepicker-icon {
+    background-image: url(images/date.png);
+}
+
+.datetimepicker-icon {
+    background-image: url(images/calendar.png);
+}
+
+.radiobuttonlist-icon {
+    background-image: url(images/radiobuttonlist.png);
+}
+
+.line-icon {
+    background-image: url(images/line.png);
+}
+
+.time-icon {
+    background-image: url(images/time.png);
+}
+
+.fileattachment-icon {
+    background-image: url(images/attach.png);
+}
+
+.imageviewer-icon {
+    background-image: url(images/photos_s.png);
+}
+
+.dynamicimage-icon {
+    background-image: url(images/SampleImage.png);
+}
+
+.usersignature-icon {
+    background-image: url('images/signature_s .png');
+}
+
+.userpicture-icon {
+    background-image: url(images/user_orange_s.png);
+}
+
+.richtextbox-icon {
+    background-image: url(images/richtext_editor.png);
+}
+
+.searchpanel-icon {
+    background-image: url(images/search_field.png);
+}
+
+.nestedlink-icon {
+    background-image: url(images/link.png);
+}
+
+.grid-icon {
+    background-image: url(images/table_money.png);
+}
+
+.comment-icon {
+    background-image: url(images/comments.png);
+}
+
+.help-icon {
+    background-image: url(images/help.png);
+}
+
+.tree-icon {
+    background-image: url(images/tree_list.png);
+}
+
+.assigncontrol-icon {
+    background-image: url(images/combo_box.png);
+}
+
+.payment-icon {
+    background-image: url(images/money.png);
+}
+
+.chart-icon {
+    background-image: url(images/chart_bar.png);
+}
+
+.gauge-icon {
+    background-image: url(images/GaugeIcon.png);
+}
+
+.clientchart-icon {
+    background-image: url(images/chart_bar.png);
+}
+
+.map-icon {
+    background-image: url(images/map.png);
+}
+
+.ganttchart-icon {
+    background-image: url(images/GanttIcon.jpg);
+}
+
+.canvaspanel-icon {
+    background-image: url(images/text_signature.png);
+}
+
+/* ---------------------------------------- */
+
+.empty-label {
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+
+/*body{
+	height:150px;
+}*/
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        right: 100%;
+        left: initial;
+        margin-top: -6px;
+        margin-right: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: left;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover > a:after {
+        border-right-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            right: -100%;
+            margin-right: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#form-container {
+    padding: 0 !important;
+}
+
+.control-container .col {
+    border-width: 1px;
+}
+
+    .control-container .col .form-group {
+        margin-top: 5px;
+    }
+
+.item-selected > .columns-holder {
+    -webkit-box-shadow: inset -1px 1px 34px -5px rgba(0,0,0,0.27);
+    -moz-box-shadow: inset -1px 1px 34px -5px rgba(0,0,0,0.27);
+    box-shadow: inset -1px 1px 34px -5px rgba(0,0,0,0.27);
+}
+
+.item-selected .col.drop-zone {
+    background: none !important;
+}
+
+.item-selected {
+    -webkit-box-shadow: inset -1px 1px 34px -5px rgba(0,145,234,0.3) !important;
+    -moz-box-shadow: inset -1px 1px 34px -5px rgba(0,145,234,0.3) !important;
+    box-shadow: inset -1px 1px 34px -5px rgba(0,145,234,0.3) !important;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    background: rgba(160, 197, 232, 0.3) !important;
+}
+
+
+    .item-selected > .controls {
+        display: block !important;
+        position: relative;
+    }
+
+        .item-selected > .controls > .btn-group {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            z-index: 200;
+        }
+
+
+.drop-area {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+#toolbar-container .list-group {
+    overflow-y: auto;
+    margin-bottom: 0;
+}
+
+.tab-content {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+
+.visual {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 100;
+}
+
+.control-container .col {
+    border-style: dotted;
+}
+
+
+.col {
+    background: white;
+}
+
+.item-selected .col {
+    background: none;
+}
+
+.drop-area {
+    background-color: #fafafa;
+    background-color: #f4fcff;
+    background-color: #fafafa;
+}
+
+
+label[contenteditable=true]:focus {
+    /*padding: 6px 12px;*/
+    padding: 3px 3px;
+    /*padding-right:20px;*/
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    background: #E3F2FD;
+}
+
+span[contenteditable=true]:focus {
+    /*padding: 6px 12px;*/
+    padding: 3px 3px;
+    /*padding-right:20px;*/
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    background: #E3F2FD;
+}
+
+.col > .nav-tabs {
+    margin-top: 5px;
+    padding-right: 2px;
+}
+
+.col .tab-pane {
+    min-height: 27px;
+}
+
+.row-container .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+    padding-right: 5px;
+}
+
+.row-container .nav-tabs {
+    margin-bottom: 0;
+}
+
+.no-radius * {
+    border-radius: 0 !important;
+}
+
+.no-radius-simple {
+    border-radius: 0 !important;
+}
+
+
+.center-image {
+    margin: 0 auto;
+}
+
+.imageViewerBackground {
+    min-height: 128px;
+    background-image: url(images/photos.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ArpgBackground {
+    min-height: 128px;
+    background-image: url(images/ArpgBackGround.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.UserSignatureBackground {
+    min-height: 128px;
+    background-image: url(images/signature.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.UserPictureBackground {
+    min-height: 128px;
+    background-image: url(images/user.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.RichTextBoxBackground {
+    min-height: 150px;
+    background-image: url(images/user.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ChartBackground {
+    min-height: 150px;
+    background-image: url(images/BarGraph.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.GaugeBackground {
+    min-height: 150px;
+    background-image: url(images/Gauge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.ClientChartBackground {
+    min-height: 150px;
+    background-image: url(images/intractiveChart.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.MapBackground {
+    min-height: 150px;
+    background-image: url(images/Map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.GanttChartBackground {
+    min-height: 150px;
+    background-image: url(images/Gantt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.CanvasPanelBackground {
+    min-height: 170px;
+    background-image: url(images/signature_panel_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.BtnAttachment {
+    /*font-size: 10px;*/
+    padding-right: 1px;
+    padding-left: 1px;
+    width: 40px;
+}
+
+
+#the-form {
+    padding: 0 !important;
+}
+
+
+.GridBg {
+    background-image: url(images/table-colums-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.single-attachment-button {
+    /*font-size: 8px;*/
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    height: 28px;
+    /*font-size:8px !important;   
+    margin-right:5px; padding-right:5px ; padding-left:5px ;  padding-bottom:3px; padding-top:3px*/
+}
+
+#the-form {
+    padding: 0 !important;
+}
+
+.CommentRow {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.SendBox {
+}
+
+.hide {
+    display: none;
+}
+
+.Show {
+    display: block;
+}
+
+.PaymentBox {
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #cccccc;
+}
+
+
+.tab-pane {
+    padding: 5px;
+}
+
+.tab-content {
+    padding-bottom: 5px;
+}
+
+
+.Tree {
+    background-image: url('images/treeview.png');
+    background-position: center;
+    min-height: 128px;
+    background-repeat: no-repeat;
+}
+
+.Assign {
+    background-image: url('images/assign_list.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 150px;
+    width: 100%;
+}
+
+
+.tab-control-container {
+    border-top: 0;
+}
+
+    .tab-control-container > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        .tab-control-container > ul > li {
+            float: left;
+            height: 27px;
+            line-height: 15px;
+            margin-left: 5px;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid black;
+            border-bottom: 0;
+            background-color: #fff;
+            border-color: #ddd #ddd #fff;
+            border-top-color: rgb(221, 221, 221);
+            border-right-color: rgb(221, 221, 221);
+            border-bottom-color: rgb(255, 255, 255);
+            border-left-color: rgb(221, 221, 221);
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+            .tab-control-container > ul > li.active {
+                font-weight: bold;
+                background-color: #eed;
+            }
+
+
+    .tab-control-container > .tabPage {
+        box-sizing: border-box;
+        margin-top: 0;
+        margin-bottom: 5px;
+        display: none;
+    }
+
+        .tab-control-container > .tabPage.active {
+            display: block;
+        }
+
+
+.tabpage.drop-zone {
+    border-style: dashed;
+    border-top-style: dotted;
+}
+
+.Borders {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.Button-NoWrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

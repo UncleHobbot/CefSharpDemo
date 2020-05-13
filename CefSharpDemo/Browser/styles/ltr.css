@@ -1,0 +1,13 @@
+﻿.row-icon, .control-item {
+    text-align: left !important;
+    direction: ltr;
+    -ms-background-position: 98% 5px !important;
+    background-position: 98% 5px !important;
+}
+
+.visual {
+    position: absolute;
+    top: 5px;
+    left: inherit !important;
+    right: 0px !important;
+}
