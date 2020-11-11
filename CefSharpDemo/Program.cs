@@ -7,15 +7,12 @@ namespace CefSharpDemo
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            //var virtualUI = new Cybele.Thinfinity.VirtualUI();
-            //virtualUI.Start();
-            //virtualUI.AllowExecute("CefSharp.BrowserSubprocess.exe");
+            var virtualUI = new Cybele.Thinfinity.VirtualUI();
+            virtualUI.Start();
+            virtualUI.AllowExecute("CefSharp.BrowserSubprocess.exe");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
