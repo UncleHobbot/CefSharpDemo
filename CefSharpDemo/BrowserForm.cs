@@ -18,19 +18,20 @@ namespace CefSharpDemo
 
             var startHomePage = @"./Browser/index.html";
             startHomePage = new Uri(Path.GetFullPath(startHomePage)).LocalPath;
-            
+
             _bridge = new Bridge();
 
             _browser = new ChromiumWebBrowser(startHomePage);
-            _browser.JavascriptObjectRepository.Register("bridge", _bridge, false, new BindingOptions {CamelCaseJavascriptNames = false});
+            _browser.JavascriptObjectRepository.NameConverter = null;
+            _browser.JavascriptObjectRepository.Register("bridge", _bridge, false, new BindingOptions());
 
             _browser.IsBrowserInitializedChanged += (s, e) =>
             {
-                    try
-                    {
-                        _browser.ShowDevTools();
-                    }
-                    catch { }
+                try
+                {
+                    _browser.ShowDevTools();
+                }
+                catch { }
             };
 
             tpBrowser.AutoScroll = true;
